@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  position: relative;
+  align-items: stretch;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 20px;
+}
+.image {
+  position: fixed;
+  min-width: 0;
+  min-height: 0;
+  width: 261px;
+  height: 215px;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  z-index: 1;
+}
+.group_1 {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: stretch;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 20px;
+}
+.text {
+  width: 326px;
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+  margin: 20px;
+}
+.h1 {
+  width: 365px;
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+}
+.text_1 {
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+  margin: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,40 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 20px;
+}
+.text {
+  margin: 25px;
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+}
+.h2 {
+  margin: 20px;
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+}
+.card {
+  margin: 20px;
+  width: 365px;
+  height: max-content;
+  min-width: 320px;
+}
+.avatar {
+  color: hsla(var(--igx-primary-800));
+  background-color: hsla(var(--igx-primary-300));
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

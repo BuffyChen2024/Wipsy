@@ -1,0 +1,36 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  align-items: stretch;
+  position: relative;
+  margin: 20px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.h2 {
+  margin: 60px;
+  min-width: min-content;
+  width: 285px;
+  height: max-content;
+  text-align: center;
+}
+.icon {
+  top: 342.26399973099px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  margin: 60px;
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  z-index: 1;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

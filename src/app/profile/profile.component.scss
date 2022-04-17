@@ -1,0 +1,42 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  align-items: stretch;
+  margin: 20px;
+  width: 406px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.text {
+  min-width: min-content;
+  height: max-content;
+  text-align: center;
+}
+.card {
+  margin: 20px;
+  width: 360px;
+  height: max-content;
+  min-width: 320px;
+}
+.avatar {
+  color: hsla(var(--igx-grays-800));
+  background-color: hsla(var(--igx-grays-400));
+}
+.button {
+  margin: 20px;
+  height: max-content;
+  min-width: min-content;
+  color: hsla(var(--igx-primary-700));
+  background-color: hsla(var(--igx-primary-300));
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

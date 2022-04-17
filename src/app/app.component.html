@@ -1,0 +1,41 @@
+<igx-navbar class="navbar">
+  <ng-container>
+    <button igxButton="outlined" igxRipple routerLink="/home-page" class="button">
+      <igx-icon>home</igx-icon>
+      <span>Wipsy</span>
+    </button>
+    <button igxButton="icon" igxRipple routerLink="/settings">
+      <igx-icon>settings</igx-icon>
+    </button>
+  </ng-container>
+</igx-navbar>
+<div class="group row">
+  <igx-nav-drawer [isOpen]="false" width="299px" [pin]="true" [pinThreshold]="1024" class="nav-drawer">
+    <ng-template igxDrawerMini>
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/profile" class="nav-drawer-item">
+        <igx-icon family="material" class="icon">account_circle</igx-icon>
+      </span>
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/bac" class="nav-drawer-item">
+        <igx-icon family="material" class="icon">local_drink</igx-icon>
+      </span>
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/statistics" class="nav-drawer-item">
+        <igx-icon family="material" class="icon">assessment</igx-icon>
+      </span>
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/link-device" class="nav-drawer-item">
+        <igx-icon family="material" class="icon">link</igx-icon>
+      </span>
+      <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/uber" class="nav-drawer-item">
+        <igx-icon family="material" class="icon">directions_car</igx-icon>
+      </span>
+    </ng-template>
+    <ng-template igxDrawer>
+      <span [isHeader]="false" [active]="false" igxDrawerItem class="nav-drawer-item">
+        <igx-icon family="material" class="icon">account_circle</igx-icon>
+        <span class="fake_title">Title goes here</span>
+      </span>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
